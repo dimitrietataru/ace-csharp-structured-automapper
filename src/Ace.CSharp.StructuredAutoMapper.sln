@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ace.CSharp.StructuredAutoMapper", "Ace.CSharp.StructuredAutoMapper\Ace.CSharp.StructuredAutoMapper.csproj", "{0BF6A7B3-C9E8-425E-B5E5-6DCFACB67F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ace.CSharp.StructuredAutoMapper.Abstractions", "Ace.CSharp.StructuredAutoMapper.Abstractions\Ace.CSharp.StructuredAutoMapper.Abstractions.csproj", "{02DFACA2-FDE5-4D19-9CF2-45E301B2E950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ace.CSharp.StructuredAutoMapper.Abstractions.Test", "Ace.CSharp.StructuredAutoMapper.Abstractions.Test\Ace.CSharp.StructuredAutoMapper.Abstractions.Test.csproj", "{90BF0E04-2B6B-490B-A249-4A980B70B296}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{DB64F787-F4B2-4168-AE75-4BBA3E4451D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ace.CSharp.StructuredAutoMapper.Sample", "sample\Ace.CSharp.StructuredAutoMapper.Sample\Ace.CSharp.StructuredAutoMapper.Sample.csproj", "{A2C0C40B-0A89-4691-AF6C-1AB1F652644E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ace.CSharp.StructuredAutoMapper.Sample.Tests", "sample\Ace.CSharp.StructuredAutoMapper.Sample.Tests\Ace.CSharp.StructuredAutoMapper.Sample.Tests.csproj", "{0ADC4C55-DF4E-42BF-AAE6-D0573CEB7A0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BF6A7B3-C9E8-425E-B5E5-6DCFACB67F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF6A7B3-C9E8-425E-B5E5-6DCFACB67F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF6A7B3-C9E8-425E-B5E5-6DCFACB67F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF6A7B3-C9E8-425E-B5E5-6DCFACB67F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BF0E04-2B6B-490B-A249-4A980B70B296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BF0E04-2B6B-490B-A249-4A980B70B296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BF0E04-2B6B-490B-A249-4A980B70B296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BF0E04-2B6B-490B-A249-4A980B70B296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C0C40B-0A89-4691-AF6C-1AB1F652644E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C0C40B-0A89-4691-AF6C-1AB1F652644E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C0C40B-0A89-4691-AF6C-1AB1F652644E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C0C40B-0A89-4691-AF6C-1AB1F652644E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADC4C55-DF4E-42BF-AAE6-D0573CEB7A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADC4C55-DF4E-42BF-AAE6-D0573CEB7A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADC4C55-DF4E-42BF-AAE6-D0573CEB7A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADC4C55-DF4E-42BF-AAE6-D0573CEB7A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DFACA2-FDE5-4D19-9CF2-45E301B2E950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DFACA2-FDE5-4D19-9CF2-45E301B2E950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DFACA2-FDE5-4D19-9CF2-45E301B2E950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DFACA2-FDE5-4D19-9CF2-45E301B2E950}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2C0C40B-0A89-4691-AF6C-1AB1F652644E} = {DB64F787-F4B2-4168-AE75-4BBA3E4451D4}
+		{0ADC4C55-DF4E-42BF-AAE6-D0573CEB7A0F} = {DB64F787-F4B2-4168-AE75-4BBA3E4451D4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {653B9ADB-D7F9-470F-B4CA-C78AD5BE365F}
+	EndGlobalSection
+EndGlobal

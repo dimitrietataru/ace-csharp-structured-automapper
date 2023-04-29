@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AceCSharp.StructuredAutoMapper</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Dimitrie Tataru</Authors>
+    <Company>A C E</Company>
+    <Description>C# Structured AutoMapper</Description>
+    <PackageTags>csharp;automapper;automapper-profiles;one-way-profile;two-way-profile;structured-auto-mapper</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ace.CSharp.StructuredAutoMapper.Abstractions\Ace.CSharp.StructuredAutoMapper.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
