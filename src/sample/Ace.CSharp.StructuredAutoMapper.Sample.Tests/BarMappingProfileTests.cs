@@ -34,4 +34,10 @@ public sealed class BarMappingProfileTests
     {
         base.GivenMapFromLeftToRightWhenSourceIsNullThenHandlesGracefully();
     }
+
+    [Fact]
+    public sealed override void GivenMapFromRightToLeftWhenMappingIsNotConfiguredThenThrowsException()
+    {
+        base.GivenMapFromRightToLeftWhenMappingIsNotConfiguredThenThrowsException();
+    }
 }
