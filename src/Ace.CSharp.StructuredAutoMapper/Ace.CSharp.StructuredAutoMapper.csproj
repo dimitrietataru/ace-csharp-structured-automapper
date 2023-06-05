@@ -16,6 +16,13 @@
     <PackageTags>csharp;automapper;automapper-profiles;one-way-profile;two-way-profile;structured-auto-mapper</PackageTags>
   </PropertyGroup>
 
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Ace.CSharp.StructuredAutoMapper.Abstractions\Ace.CSharp.StructuredAutoMapper.Abstractions.csproj" />
   </ItemGroup>
