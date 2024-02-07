@@ -8,11 +8,11 @@ public abstract class TwoWayProfile<TLeft, TRight> : AbstractTwoWayProfile<TLeft
 {
     public override void ConfigureLeftToRightMapping()
     {
-        _ = CreateMap<TLeft, TRight>();
+        CreateMap<TLeft, TRight>();
     }
 
     public override void ConfigureRightToLeftMapping()
     {
-        _ = CreateMap<TRight, TLeft>();
+        CreateMap<TRight, TLeft>();
     }
 }

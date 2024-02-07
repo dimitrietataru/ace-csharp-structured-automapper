@@ -8,6 +8,6 @@ public abstract class OneWayProfile<TLeft, TRight> : AbstractOneWayProfile<TLeft
 {
     public override void ConfigureLeftToRightMapping()
     {
-        _ = CreateMap<TLeft, TRight>();
+        CreateMap<TLeft, TRight>();
     }
 }

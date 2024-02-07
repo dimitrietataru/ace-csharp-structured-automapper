@@ -47,7 +47,7 @@ public abstract class BaseTwoWayProfileTests<TProfile, TLeft, TRight>
         // Assert
         left.Should().NotBeNull();
         right.Should().NotBeNull().And.BeOfType<TRight>();
-        LeftToRightAssertions?.Invoke(left, right);
+        LeftToRightAssertions?.Invoke(left, right!);
     }
 
     public virtual void GivenMapFromRightToLeftWhenSourceIsNullThenHandlesGracefully()
@@ -73,6 +73,6 @@ public abstract class BaseTwoWayProfileTests<TProfile, TLeft, TRight>
         // Assert
         right.Should().NotBeNull();
         left.Should().NotBeNull().And.BeOfType<TLeft>();
-        RightToLeftAssertions?.Invoke(right, left);
+        RightToLeftAssertions?.Invoke(right, left!);
     }
 }

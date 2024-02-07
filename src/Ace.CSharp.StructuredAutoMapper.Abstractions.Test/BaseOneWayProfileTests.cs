@@ -45,7 +45,7 @@ public abstract class BaseOneWayProfileTests<TProfile, TLeft, TRight>
         // Assert
         left.Should().NotBeNull();
         right.Should().NotBeNull().And.BeOfType<TRight>();
-        LeftToRightAssertions?.Invoke(left, right);
+        LeftToRightAssertions?.Invoke(left, right!);
     }
 
     public virtual void GivenMapFromRightToLeftWhenMappingIsNotConfiguredThenThrowsException()
