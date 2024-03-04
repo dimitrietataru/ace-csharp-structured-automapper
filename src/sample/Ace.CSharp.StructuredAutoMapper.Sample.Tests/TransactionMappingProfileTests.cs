@@ -44,6 +44,9 @@ public sealed class TransactionMappingProfileTests
             entity.Amount.Should().Be(dto.Amount);
         };
 
+    protected sealed override IEnumerable<Type> RelatedMappingProfiles =>
+        new List<Type> { typeof(AuxiliaryMappingProfile) };
+
     [Fact]
     public sealed override void GivenMapFromLeftToRightWhenSourceIsNullThenHandlesGracefully()
     {

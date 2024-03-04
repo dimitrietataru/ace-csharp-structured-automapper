@@ -13,7 +13,15 @@ public abstract class BaseTwoWayProfileTests<TProfile, TLeft, TRight>
     protected BaseTwoWayProfileTests()
     {
         var configuration = new MapperConfiguration(
-            config => config.AddProfile(typeof(TProfile)));
+            config =>
+            {
+                config.AddProfile(typeof(TProfile));
+
+                foreach (var profile in RelatedMappingProfiles)
+                {
+                    config.AddProfile(profile);
+                }
+            });
 
         mapper = configuration.CreateMapper();
     }
@@ -23,6 +31,8 @@ public abstract class BaseTwoWayProfileTests<TProfile, TLeft, TRight>
 
     protected abstract Action<TLeft, TRight>? LeftToRightAssertions { get; }
     protected abstract Action<TRight, TLeft>? RightToLeftAssertions { get; }
+
+    protected virtual IEnumerable<Type> RelatedMappingProfiles { get; } = [];
 
     public virtual void GivenMapFromLeftToRightWhenSourceIsNullThenHandlesGracefully()
     {

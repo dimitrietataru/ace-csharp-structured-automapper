@@ -1,5 +1,6 @@
 using Ace.CSharp.StructuredAutoMapper.Sample.Dtos;
 using Ace.CSharp.StructuredAutoMapper.Sample.Entities;
+using AutoMapper;
 
 namespace Ace.CSharp.StructuredAutoMapper.Sample.MappingProfiles;
 
@@ -13,7 +14,7 @@ public sealed class TransactionMappingProfile : TwoWayProfile<TransactionEntity,
                 options => options.MapFrom(entity => entity.Id))
             .ForMember(
                 dto => dto.ProcessedAt,
-                options => options.MapFrom(entity => entity.ProcessedAt.ToUnixTimeMilliseconds()))
+                options => options.MapFrom(entity => entity.ProcessedAt))
             .ForMember(
                 dto => dto.Amount,
                 options => options.MapFrom(entity => entity.Amount));
@@ -30,9 +31,34 @@ public sealed class TransactionMappingProfile : TwoWayProfile<TransactionEntity,
                 options => options.Ignore())
             .ForMember(
                 entity => entity.ProcessedAt,
-                options => options.MapFrom(dto => DateTimeOffset.FromUnixTimeMilliseconds(dto.ProcessedAt)))
+                options => options.MapFrom(dto => dto.ProcessedAt))
             .ForMember(
                 entity => entity.Amount,
                 options => options.MapFrom(dto => dto.Amount));
+    }
+}
+
+public sealed class AuxiliaryMappingProfile : Profile
+{
+    public AuxiliaryMappingProfile()
+    {
+        CreateMap<DateTimeOffset, long>().ConvertUsing<DateTimeOffsetToLongConverter>();
+        CreateMap<long, DateTimeOffset>().ConvertUsing<LongToDateTimeOffsetConverter>();
+    }
+
+    private sealed class DateTimeOffsetToLongConverter : ITypeConverter<DateTimeOffset, long>
+    {
+        public long Convert(DateTimeOffset source, long destination, ResolutionContext context)
+        {
+            return source.ToUnixTimeMilliseconds();
+        }
+    }
+
+    private sealed class LongToDateTimeOffsetConverter : ITypeConverter<long, DateTimeOffset>
+    {
+        public DateTimeOffset Convert(long source, DateTimeOffset destination, ResolutionContext context)
+        {
+            return DateTimeOffset.FromUnixTimeMilliseconds(source);
+        }
     }
 }
