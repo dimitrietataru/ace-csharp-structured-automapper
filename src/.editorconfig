@@ -814,4 +814,5 @@ dotnet_diagnostic.IDE0055.severity = warning
 # Exceptions
 [*.cs]
 dotnet_diagnostic.CA1005.severity = none
+dotnet_diagnostic.CA1812.severity = none
 dotnet_diagnostic.CA2214.severity = none
