@@ -3,7 +3,7 @@ using Ace.CSharp.StructuredAutoMapper.Sample.Dtos;
 using Ace.CSharp.StructuredAutoMapper.Sample.Entities;
 using Ace.CSharp.StructuredAutoMapper.Sample.MappingProfiles;
 
-namespace Ace.CSharp.StructuredAutoMapper.Sample.Tests;
+namespace Ace.CSharp.StructuredAutoMapper.Sample.Tests.MappingProfiles;
 
 public sealed class FooMappingProfileTests
     : BaseTwoWayProfileTests<FooMappingProfile, FooEntity, FooDto>
