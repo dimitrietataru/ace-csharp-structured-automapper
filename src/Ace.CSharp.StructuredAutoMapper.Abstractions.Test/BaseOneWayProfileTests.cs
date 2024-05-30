@@ -1,6 +1,3 @@
-using AutoMapper;
-using FluentAssertions;
-
 namespace Ace.CSharp.StructuredAutoMapper.Abstractions.Test;
 
 public abstract class BaseOneWayProfileTests<TProfile, TLeft, TRight>

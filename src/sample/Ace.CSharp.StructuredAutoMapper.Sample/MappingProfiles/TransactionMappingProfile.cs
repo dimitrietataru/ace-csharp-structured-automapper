@@ -1,6 +1,5 @@
 using Ace.CSharp.StructuredAutoMapper.Sample.Dtos;
 using Ace.CSharp.StructuredAutoMapper.Sample.Entities;
-using AutoMapper;
 
 namespace Ace.CSharp.StructuredAutoMapper.Sample.MappingProfiles;
 
