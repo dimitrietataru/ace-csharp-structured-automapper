@@ -14,7 +14,7 @@ public abstract class BaseOneWayProfileTests<TProfile, TLeft, TRight>
             {
                 config.AddProfile(typeof(TProfile));
 
-                foreach (var profile in RelatedtMappingProfiles)
+                foreach (var profile in RelatedMappingProfiles)
                 {
                     config.AddProfile(profile);
                 }
@@ -27,7 +27,7 @@ public abstract class BaseOneWayProfileTests<TProfile, TLeft, TRight>
 
     protected abstract Action<TLeft, TRight>? LeftToRightAssertions { get; }
 
-    protected virtual IEnumerable<Type> RelatedtMappingProfiles { get; } = [];
+    protected virtual IEnumerable<Type> RelatedMappingProfiles { get; } = [];
 
     public virtual void GivenMapFromLeftToRightWhenSourceIsNullThenHandlesGracefully()
     {
