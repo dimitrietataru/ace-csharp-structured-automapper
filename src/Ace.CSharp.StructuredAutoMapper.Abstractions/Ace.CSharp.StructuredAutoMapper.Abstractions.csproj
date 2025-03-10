@@ -9,7 +9,7 @@
 
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>AceCSharp.StructuredAutoMapper.Abstractions</PackageId>
-    <Version>3.0.1</Version>
+    <Version>4.0.0</Version>
     <Authors>Dimitrie Tataru</Authors>
     <Company>A C E</Company>
     <Description>C# Structured AutoMapper Abstractions</Description>
