@@ -18,7 +18,8 @@ public abstract class BaseOneWayProfileTests<TProfile, TLeft, TRight>
                 {
                     config.AddProfile(profile);
                 }
-            });
+            },
+            loggerFactory: NullLoggerFactory.Instance);
 
         mapper = configuration.CreateMapper();
     }
