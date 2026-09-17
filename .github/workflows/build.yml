@@ -19,7 +19,7 @@ jobs:
     env:
       CONFIG: 'Release'
       SOLUTION: 'src/Ace.CSharp.StructuredAutoMapper.sln'
-      TEST_PROJECT: 'src\sample\Ace.CSharp.StructuredAutoMapper.Sample.Tests/Ace.CSharp.StructuredAutoMapper.Sample.Tests.csproj'
+      TEST_PROJECT: 'src/sample/Ace.CSharp.StructuredAutoMapper.Sample.Tests/Ace.CSharp.StructuredAutoMapper.Sample.Tests.csproj'
 
     runs-on: ubuntu-latest
 
