@@ -67,4 +67,4 @@ jobs:
 
     - name: dotnet nuget push
       if: startsWith(github.ref, 'refs/heads/release')
-      run: dotnet nuget push **\*.nupkg -s 'https://api.nuget.org/v3/index.json' --api-key ${{steps.login.outputs.NUGET_API_KEY}}
+      run: dotnet nuget push **\*.nupkg -s 'https://api.nuget.org/v3/index.json' --api-key ${{steps.login.outputs.NUGET_API_KEY}} --skip-duplicate
