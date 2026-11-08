@@ -16,13 +16,6 @@
     <PackageReference Include="xunit.v3" Version="4.0.2" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.403">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\Ace.CSharp.StructuredAutoMapper.Abstractions.Test\Ace.CSharp.StructuredAutoMapper.Abstractions.Test.csproj" />
     <ProjectReference Include="..\Ace.CSharp.StructuredAutoMapper.Sample\Ace.CSharp.StructuredAutoMapper.Sample.csproj" />

@@ -20,13 +20,6 @@
     <PackageReference Include="FluentAssertions" Version="[7.2.0]" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.403">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Ace.CSharp.StructuredAutoMapper.Abstractions\Ace.CSharp.StructuredAutoMapper.Abstractions.csproj" />
   </ItemGroup>

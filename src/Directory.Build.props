@@ -1,0 +1,10 @@
+<Project>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.403">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
