@@ -3,17 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
 
-    <Nullable>enable</Nullable>
-    <WarningsAsErrors>nullable</WarningsAsErrors>
-    <ImplicitUsings>disable</ImplicitUsings>
-
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>AceCSharp.StructuredAutoMapper</PackageId>
-    <Version>5.0.2</Version>
-    <Authors>Dimitrie Tataru</Authors>
-    <Company>A C E</Company>
-    <Description>C# Structured AutoMapper</Description>
-    <PackageTags>csharp;automapper;automapper-profiles;one-way-profile;two-way-profile;structured-auto-mapper</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
